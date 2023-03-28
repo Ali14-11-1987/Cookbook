@@ -1,0 +1,53 @@
+* {
+    background-color: bisque;
+    margin: 5px;
+}
+
+.container-fluid {
+    height: 100vh;
+    width: 100vw;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: center;
+    align-content: center;
+}
+
+.box {
+    background-color: azure;
+    border: 1px solid black;
+    min-height: 50px;
+    font-size: 2rem;
+}
+
+.pics {
+    max-width: 350px;
+    height: 550px;
+}
+
+img:hover {
+    -webkit-filter: blur(3px); /* Chrome, Safari, Opera */
+    filter: blur(3px);
+}
+
+img {
+  transition: .3s all;
+  border-radius: 3px;
+}
+
+.overlay {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay p {
+    text-align: center;
+}
