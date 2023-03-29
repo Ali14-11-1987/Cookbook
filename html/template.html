@@ -15,71 +15,99 @@
   </head>
   <body>
     <div class="container-fluid vh-100  d-flex flex-column align-items-center">
-        <header class="row w-100">
-          <nav class=" navbar navbar-expand-lg bg-body-tertiary">
-              <div class="head-nav container-fluid">
-                  <a class="navbar-brand" href="#">COOK BOOK</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                      aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="nav-color collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                  aria-expanded="false">
-                                  Recipes
-                                  <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li>
-                                          <hr class="dropdown-divider">
-                                      </li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                  </ul>
-                          </li>
-  
-                      </ul>
-                      <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                  </div>
-              </div>
-          </nav>
-  
-          <img id="header-img" src="https://th.bing.com/th/id/R.04c077e6bf7e92175c1fbe5092cd013a?rik=huufTI%2b%2fPPr91g&riu=http%3a%2f%2ffreepngclipart.com%2fdownload%2fpizza%2f85583-cooking-royalty-free-chef-cook-logo-hand-painted.png&ehk=55jTVMwneOgN2o1WLaCgc%2bmv7O6NUSUXWcGE%2faCDwTI%3d&risl=&pid=ImgRaw&r=0" alt="">
-      </header>
-      <main class="row w-75">
+      <header class="row w-100">
+        <nav class=" navbar navbar-expand-lg bg-body-tertiary">
+            <div class="head-nav container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#"><img id="header-img" src="https://th.bing.com/th/id/R.04c077e6bf7e92175c1fbe5092cd013a?rik=huufTI%2b%2fPPr91g&riu=http%3a%2f%2ffreepngclipart.com%2fdownload%2fpizza%2f85583-cooking-royalty-free-chef-cook-logo-hand-painted.png&ehk=55jTVMwneOgN2o1WLaCgc%2bmv7O6NUSUXWcGE%2faCDwTI%3d&risl=&pid=ImgRaw&r=0" alt="" style="height: 1rem;width: 1rem;margin: 5px" >COOK BOOK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav-color collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Recipes
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+      <main class="row">
         <!-- Put your recipe here! -->
-        <div class="col-5  d-flex flex-column align-items-center">
+        <div class="col-12">
           <div class="row">
-            <h1 class="col text-uppercase">
+            <h1 class="col text-uppercase display-5 mx-5">
               <!-- Name of recipe -->
               Recipe Name
             </h1>
           </div>
-          <div class="row d-block h-75 overflow-hidden">
-            <!-- Images -->
-            <img 
+
+        </div>
+        <div class="col-5  d-flex flex-column align-items-center ">
+          <div class="row d-block h-100 overflow-hidden">
+            <!-- Image here! -->
+            <!-- Either use one single image -->
+            <!-- <img 
             src="../img/cocktail-long.jpg" 
             alt="" class="h-100 d-block object-fit-cover" />
           </div>
         </div>
         <div class="col-7 flex-column justify-content-end">
-          <div class="row">
+          <div class="row card"> -->
+<!--  -->
+            <!--  -->
+      <!-- or use this carousel. Please delete the one you didn't use! -->
+      <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/cocktail-long.jpg" class="d-block w-100" alt="Nice Cocktail">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/cocktail.jpg" class="d-block w-100" alt="another nice cocktail">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/cocktail.jpg" class="d-block w-100" alt="nice cocktails all around">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+
+
           <!-- ingredients -->
-          <h3>
+          <h3 class="display-6 card-header text-capitalize">
           ingredients here
         </h3>
-        <!-- <ul class="list-group-flush d-flex flex-wrap gap-3">
+        <!-- <ul class="card-body list-group-flush d-flex flex-wrap gap-3">
           <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 ">Ingredient #1</li>
           <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 ">Ingredient #2</li>
           <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 ">Ingredient #3</li>
@@ -88,40 +116,40 @@
           <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 ">Ingredient #6</li>
         </ul> -->
 
-        <ul class="list-group-flush d-flex flex-wrap justify-content-center gap-3">
-        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 d-flex justify-content-between align-items-baseline">
+        <ul class="card-body list-group-flush d-flex flex-wrap justify-content-center gap-3">
+        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline">
           Spam 
-          <span class="badge badge-pill text-black bg-success-subtle mx-1">2 tbsp</span>
+          <span class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1">2 tbsp</span>
         </li>
-        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 d-flex justify-content-between align-items-baseline">
+        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline">
           Butter 
-          <span class="badge badge-pill text-black bg-success-subtle mx-1">2 cups</span>
+          <span class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1">2 cups</span>
         </li>
-        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 d-flex justify-content-between align-items-baseline">
+        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline">
           Honey 
-          <span class="badge badge-pill text-black bg-success-subtle mx-1">42gr</span>
+          <span class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1">42gr</span>
         </li>
-        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 d-flex justify-content-between align-items-baseline">
+        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline">
           Cocoa 
-          <span class="badge badge-pill text-black bg-success-subtle mx-1">1.25 pound</span>
+          <span class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1">1.25 pound</span>
         </li>
-        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 d-flex justify-content-between align-items-baseline">
+        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline">
           Foobar 
-          <span class="badge badge-pill text-black bg-success-subtle mx-1">1</span>
+          <span class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1">1</span>
         </li>
-        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-3 d-flex justify-content-between align-items-baseline">
+        <li class="list-group-item py-2 px-4 bg-dark-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline">
           Chia 
-          <span class="badge badge-pill text-black bg-success-subtle mx-1">3 pieces</span>
+          <span class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1">3 pieces</span>
         </li>
         </ul>
         </div>
 
-        <div class="row">
-          <h3 class="font-weight-bolder">
+        <div class="row card">
+          <h3 class="card-header font-weight-bolder display-6 text-capitalize">
             how is it prepared
           </h3>
           <!-- preparation -->
-          <p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquam non dolorem quis sequi voluptatem ullam exercitationem maiores. Explicabo reprehenderit voluptate dignissimos doloremque soluta, accusamus nostrum, laudantium magnam qui, beatae praesentium deserunt laboriosam blanditiis maxime eius unde. Nemo reprehenderit dicta, quos, dolor numquam eum eius laboriosam nulla neque nihil non a tempora iure. Omnis facere consectetur minima, eius ut in.</p>        </div>
+          <p class="card-body text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquam non dolorem quis sequi voluptatem ullam exercitationem maiores. Explicabo reprehenderit voluptate dignissimos doloremque soluta, accusamus nostrum, laudantium magnam qui, beatae praesentium deserunt laboriosam blanditiis maxime eius unde. Nemo reprehenderit dicta, quos, dolor numquam eum eius laboriosam nulla neque nihil non a tempora iure. Omnis facere consectetur minima, eius ut in.</p>        </div>
         </div>
       </main>
 
