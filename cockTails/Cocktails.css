@@ -1,0 +1,15 @@
+.container{
+    width: 100%;
+    background-color: aqua;
+}
+
+img:hover{
+width: 100%;
+transform: rotate(30deg);
+border-radius: 120%;
+}
+
+
+.list-group{
+    list-style: none;
+}
