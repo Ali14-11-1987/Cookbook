@@ -160,20 +160,26 @@
 
 .h1-p-h3 {
     width: 100%;
+    opacity: 0.70;
     
 }
 
 .h1-p-h3:hover{
-  font-size: larger;
+  font-weight: bolder;
+  opacity: 1;
+  transition: 1s;
+  
 }
 
 .main-div img {
     width: 100%;
     border-radius: 20px;
-
-}
+    background: wheat;
+  }
 
 .side-img{
     width: 50%;
+    
 }
+
 
