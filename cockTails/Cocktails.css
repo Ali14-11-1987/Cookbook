@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+img{
+width: 50%;
+transition: all 0.5s;
+margin: 0 auto;
+display: block;
+display: flex;
+flex-wrap: wrap;
+}
+
+
+img:hover{
+transform: rotate(30deg);
+border-radius: 30%;
+
+}
+
+
+.list-group{
+    list-style: none;
+}
+
+p{
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+h3,h4{
+    text-align: center;
+}
+
+.preps{
+   text-align: center;
+}
+
+h1{
+    text-align: center;
+}
