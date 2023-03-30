@@ -54,8 +54,6 @@
 .box {
     position: relative;
     font-size: 2rem;
-    /* width: 570px;
-    height: 790px; */
     width: 400px;
     height: 550px;
 }
@@ -106,10 +104,8 @@
 }
 
 .box__description {
-    /* display: flex; */
     font-size: 1em;
     margin-top: 0.05em;
-    /* justify-content: center; */
 }
 
 #myVideo {
