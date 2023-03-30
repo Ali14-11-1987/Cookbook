@@ -1,165 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
     <title>CookFood</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <div class="body_container">
-    <video autoplay muted loop id="myVideo">
-        <source src="video/cookbook_bkgrd_video.mp4" type="video/mp4">
+  <body>
+    <div class="body_container">
+      <video autoplay muted loop id="myVideo">
+        <source src="video/cookbook_bkgrd_video.mp4" type="video/mp4" />
       </video>
-    <header>
-        <nav class=" navbar navbar-expand-lg bg-body-tertiary">
-            <div class="head-nav container-fluid">
-              <a class="navbar-brand d-flex align-items-center" href="#"><img id="header-img" src="https://th.bing.com/th/id/R.04c077e6bf7e92175c1fbe5092cd013a?rik=huufTI%2b%2fPPr91g&riu=http%3a%2f%2ffreepngclipart.com%2fdownload%2fpizza%2f85583-cooking-royalty-free-chef-cook-logo-hand-painted.png&ehk=55jTVMwneOgN2o1WLaCgc%2bmv7O6NUSUXWcGE%2faCDwTI%3d&risl=&pid=ImgRaw&r=0" alt="" style="height: 1rem;width: 1rem;margin: 5px" >COOK BOOK</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="head-nav container-fluid">
+            <a
+              class="navbar-brand d-flex align-items-center"
+              href="./index.html"
+              ><img
+                id="header-img"
+                src="https://th.bing.com/th/id/R.04c077e6bf7e92175c1fbe5092cd013a?rik=huufTI%2b%2fPPr91g&riu=http%3a%2f%2ffreepngclipart.com%2fdownload%2fpizza%2f85583-cooking-royalty-free-chef-cook-logo-hand-painted.png&ehk=55jTVMwneOgN2o1WLaCgc%2bmv7O6NUSUXWcGE%2faCDwTI%3d&risl=&pid=ImgRaw&r=0"
+                alt=""
+                style="height: 1rem; width: 1rem; margin: 5px"
+              />COOK BOOK</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="nav-color collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Recipes</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./html/veganrecipes.html"
+                        >Vegan Food</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./html/seafood.html"
+                        >Sea Food</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./html/bread.html"
+                        >Baking Bread</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./cockTails/Cocktails.html"
+                        >Everything Cocktail</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
                 </button>
-                <div class="nav-color collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Recipes
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+              </form>
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
 
-    <main>
+      <main>
         <div class="container-fluid">
-            <div class="row h-100 w-100">
-              <div class="col-auto my-auto">
-                <div class="box">
-                  <img class="box__image" src="images/veganfood.jpg" alt="vegan-food-pic">
-                    <a href="html/veganrecipes.html">         
-                    <div class="box__overlay box__overlay--blur">
+          <div class="row h-100 w-100">
+            <div class="col-auto my-auto">
+              <div class="box">
+                <img
+                  class="box__image"
+                  src="images/veganfood.jpg"
+                  alt="vegan-food-pic"
+                />
+                <a href="html/veganrecipes.html">
+                  <div class="box__overlay box__overlay--blur">
                     <div class="box__title">Vegan Food</div>
-                      <p class="box__description">Find Vegan Recipes Here!</p>
-                    </div>
-                    </a>
-                </div>
+                    <p class="box__description">Find Vegan Recipes Here!</p>
+                  </div>
+                </a>
               </div>
-              <div class="col-auto my-auto">
-                <div class="box">
-                  <img class="box__image" src="images/seafood.jpg" alt="seafood-pic">
-                  <a href="html/seafood.html">         
-                    <div class="box__overlay box__overlay--blur">
+            </div>
+            <div class="col-auto my-auto">
+              <div class="box">
+                <img
+                  class="box__image"
+                  src="images/seafood.jpg"
+                  alt="seafood-pic"
+                />
+                <a href="html/seafood.html">
+                  <div class="box__overlay box__overlay--blur">
                     <div class="box__title">Seafood</div>
-                      <p class="box__description">Find Seafood Recipes Here!</p>
+                    <p class="box__description">Find Seafood Recipes Here!</p>
                   </div>
-                  </a>
-                </div>
+                </a>
               </div>
-              <div class="col-auto my-auto">
-                <div class="box">
-                  <img class="box__image" src="images/bread.jpg" alt="bread-pic"> 
-                  <a href="html/bread.html">      
-                    <div class="box__overlay box__overlay--blur">
+            </div>
+            <div class="col-auto my-auto">
+              <div class="box">
+                <img
+                  class="box__image"
+                  src="images/bread.jpg"
+                  alt="bread-pic"
+                />
+                <a href="html/bread.html">
+                  <div class="box__overlay box__overlay--blur">
                     <div class="box__title">Bread Making</div>
-                      <p class="box__description">Find Bread Recipes Here!</p>
+                    <p class="box__description">Find Bread Recipes Here!</p>
                   </div>
-                  </a>
-                </div>
+                </a>
               </div>
-              <div class="col-auto my-auto">
-                <div class="box">
-                  <img class="box__image" src="images/cocktail.jpg" alt="cocktail-pic">
-                  <a href="cockTails/Cocktails.html">       
-                    <div class="box__overlay box__overlay--blur">
+            </div>
+            <div class="col-auto my-auto">
+              <div class="box">
+                <img
+                  class="box__image"
+                  src="images/cocktail.jpg"
+                  alt="cocktail-pic"
+                />
+                <a href="cockTails/Cocktails.html">
+                  <div class="box__overlay box__overlay--blur">
                     <div class="box__title">Cocktails</div>
-                      <p class="box__description">Find Cocktail Recipes Here!</p>
+                    <p class="box__description">Find Cocktail Recipes Here!</p>
                   </div>
-                  </a>
-                </div>
+                </a>
               </div>
             </div>
           </div>
-    </main>
-    <footer class="footer-b">
-      <div class="footer-nav container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        </div>
+      </main>
+      <footer class="footer-b">
+        <div
+          class="footer-nav container py-4 py-md-5 px-4 px-md-3 text-body-secondary"
+        >
           <div class="row">
-              <div class="col-lg-3 mb-3">
-                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/"
-                      aria-label="Bootstrap">
-                      <img id="footer-img"
-                          src="https://th.bing.com/th/id/R.04c077e6bf7e92175c1fbe5092cd013a?rik=huufTI%2b%2fPPr91g&riu=http%3a%2f%2ffreepngclipart.com%2fdownload%2fpizza%2f85583-cooking-royalty-free-chef-cook-logo-hand-painted.png&ehk=55jTVMwneOgN2o1WLaCgc%2bmv7O6NUSUXWcGE%2faCDwTI%3d&risl=&pid=ImgRaw&r=0"
-                          alt="">
-                      <span class="fs-5">COOKBOOK</span>
-                  </a>
-                  <ul class="list-unstyled small">
-                      <li class="mb-2">Designed and built with all the love in the world by the <a
-                              href="/docs/5.3/about/team/">cookbook</a> with the help of <a
-                              href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+            <div class="col-lg-3 mb-3">
+              <a
+                class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+                href="/"
+                aria-label="Bootstrap"
+              >
+                <img
+                  id="footer-img"
+                  src="https://th.bing.com/th/id/R.04c077e6bf7e92175c1fbe5092cd013a?rik=huufTI%2b%2fPPr91g&riu=http%3a%2f%2ffreepngclipart.com%2fdownload%2fpizza%2f85583-cooking-royalty-free-chef-cook-logo-hand-painted.png&ehk=55jTVMwneOgN2o1WLaCgc%2bmv7O6NUSUXWcGE%2faCDwTI%3d&risl=&pid=ImgRaw&r=0"
+                  alt=""
+                />
+                <span class="fs-5">COOKBOOK</span>
+              </a>
+              <ul class="list-unstyled small">
+                <li class="mb-2">
+                  Designed and built with all the love in the world by the
+                  <a href="/docs/5.3/about/team/">cookbook</a> with the help of
+                  <a
+                    href="https://github.com/twbs/bootstrap/graphs/contributors"
+                    >our contributors</a
+                  >.
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/">Home</a></li>
+                <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Recipes</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="/docs/5.3/getting-started/">Getting started</a>
+                </li>
+                <li class="mb-2">
+                  <a href="/docs/5.3/examples/starter-template/">Ingredients</a>
+                </li>
+              </ul>
+            </div>
 
-                  </ul>
-              </div>
-              <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                  <h5>Links</h5>
-                  <ul class="list-unstyled">
-                      <li class="mb-2"><a href="/">Home</a></li>
-                      <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
-                      
-
-                  </ul>
-              </div>
-              <div class="col-6 col-lg-2 mb-3">
-                  <h5>Recipes</h5>
-                  <ul class="list-unstyled">
-                      <li class="mb-2"><a href="/docs/5.3/getting-started/">Getting started</a></li>
-                      <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Ingredients</a></li>
-</ul>
-              </div>
-
-              <div class="col-6 col-lg-2 mb-3">
-                  <h5>Community</h5>
-                  <ul class="list-unstyled">
-                      <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-                      <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a>
-
-
-                  </ul>
-              </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Community</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="https://github.com/twbs/bootstrap/issues">Issues</a>
+                </li>
+                <li class="mb-2">
+                  <a href="https://github.com/twbs/bootstrap/discussions"
+                    >Discussions</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-      </div>
-      
-  </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        </div>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"
+      ></script>
     </div>
-</body>
-
+  </body>
 </html>
-
-  
