@@ -10,12 +10,14 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../cockTails/Cocktails.css" />
     <link rel="stylesheet" href="../style.css" />
-    <title>Template</title>
+
+    <title>Cocktail | Negroni</title>
   </head>
   <body>
     <div class="container-fluid vh-100 d-flex flex-column align-items-center">
-      <header class="row w-100">
+      <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="head-nav container-fluid">
             <a
@@ -114,7 +116,7 @@
           <div class="row">
             <h1 class="col text-uppercase display-5 mx-5">
               <!-- Name of recipe -->
-              Recipe Name
+              Negroni
             </h1>
           </div>
         </div>
@@ -128,46 +130,32 @@
             <div class="row d-block h-100 overflow-hidden">
               <!-- Image here! -->
               <!-- Either use one single image  | uncomment after this line-->
-              <!-- <img 
-                 src="../img/cocktail-long.jpg" 
-                 alt="" class="h-100 d-block object-fit-cover" />
-            </div>
-          </div> -->
-              <!-- un/comment before this line  -->
-              <!--  -->
-              <!-- or use this carousel. Please delete the one you didn't use!  Un/Comment after this line-->
-
-              <div
-                id="recipeCarousel"
-                class="carousel slide h-100"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner h-100">
-                  <div class="carousel-item h-100">
-                    <img
-                      src="../img/cocktail-long.jpg"
-                      class="h-100 d-block object-fit-contain w-100"
-                      alt="Nice Cocktail"
-                    />
-                  </div>
-                  <div class="carousel-item h-100 active">
-                    <img
-                      src="../img/cocktail.jpg"
-                      class="h-100 d-block object-fit-contain w-100"
-                      alt="another nice cocktail"
-                    />
-                  </div>
-                  <div class="carousel-item h-100">
-                    <img
-                      src="../images/cocktail.jpg"
-                      class="h-100 d-block object-fit-contain w-100"
-                      alt="nice cocktails all around"
-                    />
-                  </div>
-                </div>
-              </div>
+              <img
+                src="../cockTails/images/Negroni.PNG"
+                alt=""
+                class="h-100 d-block object-fit-cover"
+              />
             </div>
           </div>
+          <!-- un/comment before this line  -->
+          <!--  -->
+          <!-- or use this carousel. Please delete the one you didn't use!  Un/Comment after this line-->
+
+          <!-- <div id="recipeCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item h-100">
+          <img src="../img/cocktail-long.jpg" class="h-100 d-block object-fit-contain w-100" alt="Nice Cocktail">
+        </div>
+        <div class="carousel-item  h-100 active">
+          <img src="../img/cocktail.jpg" class="h-100 d-block object-fit-contain w-100" alt="another nice cocktail">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="../images/cocktail.jpg" class="h-100 d-block object-fit-contain w-100" alt="nice cocktails all around">
+        </div>
+      </div>
+    </div>
+        </div>
+      </div> -->
 
           <!-- Block End Image/Carousel -->
           <!-- Block Start: Ingredients & Preparation -->
@@ -178,62 +166,53 @@
               <h3 class="display-6 card-header text-capitalize">ingredients</h3>
               <!-- Put your ingredients here -->
               <ul
-                class="card-body list-group-flush d-flex flex-wrap justify-content-center gap-3"
+                class="card-body list-group-flush d-flex flex-wrap justify-content-center gap-3 text-capitalize"
               >
                 <li
                   class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
                 >
                   <!-- Ingredient name here -->
-                  Spam
+                  Campari
                   <!-- Amount here -->
                   <span
                     class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
-                    >2 tbsp</span
+                    >3/4 fluid ounce</span
                   >
                 </li>
                 <li
                   class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
                 >
-                  Butter
+                  gin
                   <span
                     class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
-                    >2 cups</span
+                    >3/4 fluid ounce</span
                   >
                 </li>
                 <li
                   class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
                 >
-                  Honey
+                  sweet vermouth
                   <span
                     class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
-                    >42gr</span
+                    >3/4 fluid ounce</span
                   >
                 </li>
                 <li
                   class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
                 >
-                  Cocoa
+                  carbonated water
                   <span
                     class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
-                    >1.25 pound</span
+                    >2 fluid ounces</span
                   >
                 </li>
                 <li
                   class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
                 >
-                  Foobar
+                  Wedge lemon, for garnish
                   <span
                     class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
                     >1</span
-                  >
-                </li>
-                <li
-                  class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
-                >
-                  Chia
-                  <span
-                    class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
-                    >3 pieces</span
                   >
                 </li>
               </ul>
@@ -247,21 +226,19 @@
               </h3>
               <!-- Put a preparation text here-->
               <p class="card-body text-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate aliquam non dolorem quis sequi voluptatem ullam
-                exercitationem maiores. Explicabo reprehenderit voluptate
-                dignissimos doloremque soluta, accusamus nostrum, laudantium
-                magnam qui, beatae praesentium deserunt laboriosam blanditiis
-                maxime eius unde. Nemo reprehenderit dicta, quos, dolor numquam
-                eum eius laboriosam nulla neque nihil non a tempora iure. Omnis
-                facere consectetur minima, eius ut in.
+                Add the bourbon and a large ice cube. Stir vigorously for 10
+                seconds or until the liquid is chilled. Garnish. Add a
+                maraschino cherry or two, if desired. Gently twist the orange
+                peel* directly over the glass, in order to express its oil, then
+                drop the orange peel into the glass. Serve. Serve immediately
+                and enjoy!
               </p>
             </div>
           </div>
         </div>
       </main>
 
-      <footer class="footer-b row w-100">
+      <footer class="footer-b row w-100 bg-danger-subtle">
         <div
           class="footer-nav container py-4 py-md-5 px-4 px-md-3 text-body-secondary"
         >
