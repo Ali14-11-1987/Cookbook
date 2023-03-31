@@ -22,7 +22,7 @@ border-radius: 10%;
 
 }
 .h-elements{
-    font-size: 2rem;
+    /* font-size: 2rem; */
     color: rgb(233, 141, 28);
 }
 
@@ -31,7 +31,7 @@ border-radius: 10%;
 }
 
 p{
-  max-width: 50%;
+ 
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
@@ -51,10 +51,9 @@ h1{
     text-align: center;
 }
 
-.row-cols-sm-2{
+/* .row-cols-2{
    justify-content: center;
    align-content:space-between;
     /* flex-wrap: wrap; */
 
 
-}
