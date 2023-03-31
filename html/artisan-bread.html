@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Cookbook | Artisan Bread</title>
+  </head>
+  <body>
+    <div class="container-fluid vh-100 d-flex flex-column align-items-center">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="head-nav container-fluid">
+            <a
+              class="navbar-brand d-flex align-items-center"
+              href="../index.html"
+              ><img
+                id="header-img"
+                src="https://th.bing.com/th/id/R.04c077e6bf7e92175c1fbe5092cd013a?rik=huufTI%2b%2fPPr91g&riu=http%3a%2f%2ffreepngclipart.com%2fdownload%2fpizza%2f85583-cooking-royalty-free-chef-cook-logo-hand-painted.png&ehk=55jTVMwneOgN2o1WLaCgc%2bmv7O6NUSUXWcGE%2faCDwTI%3d&risl=&pid=ImgRaw&r=0"
+                alt=""
+                style="height: 1rem; width: 1rem; margin: 5px"
+              />COOK BOOK</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="nav-color collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./bread.html"
+                    >Baking Bread</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Recipes</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./veganrecipes.html"
+                        >Vegan Food</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./seafood.html"
+                        >Sea Food</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./bread.html"
+                        >Baking Bread</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../cockTails/Cocktails.html"
+                        >Everything Cocktail</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="row">
+        <!-- Put your recipe here! -->
+        <div class="col-12">
+          <div class="row">
+            <h1 class="col text-uppercase display-5 mx-5">
+              <!-- Name of recipe -->
+              Homemade Artisan Bread
+            </h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Image box -->
+          <div
+            class="col-5 d-flex my-auto d-flex justify-content-center align-items-center"
+            style="height: 66vh"
+          >
+            <div class="row d-block h-100 overflow-hidden">
+              <!-- Image here! -->
+              <!-- Either use one single image  | uncomment after this line-->
+              <!-- <img 
+                 src="../img/cocktail-long.jpg" 
+                 alt="" class="h-100 d-block object-fit-cover" />
+            </div>
+          </div> -->
+              <!-- un/comment before this line  -->
+              <!--  -->
+              <!-- or use this carousel. Please delete the one you didn't use!  Un/Comment after this line-->
+
+              <div
+                id="recipeCarousel"
+                class="carousel slide h-100"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item h-100">
+                    <img
+                      src="../images/homemade-artisan-bread.jpg"
+                      class="h-100 d-block object-fit-contain w-100"
+                      alt="Nice Cocktail"
+                    />
+                  </div>
+                  <div class="carousel-item h-100 active">
+                    <img
+                      src="../images/homemade-crusty-artisan-bread-2.jpg"
+                      class="h-100 d-block object-fit-contain w-100"
+                      alt="another nice cocktail"
+                    />
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img
+                      src="../images/homemade-crusty-bread-dough.jpg"
+                      class="h-100 d-block object-fit-contain w-100"
+                      alt="nice cocktails all around"
+                    />
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img
+                      src="../images/homemade-artisan-french-bread-sliced.jpg"
+                      class="h-100 d-block object-fit-contain w-100"
+                      alt="nice cocktails all around"
+                    />
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img
+                      src="../images/homemade-artisan-french-bread-sliced2.jpg"
+                      class="h-100 d-block object-fit-contain w-100"
+                      alt="nice cocktails all around"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block End Image/Carousel -->
+          <!-- Block Start: Ingredients & Preparation -->
+          <div class="col-7 d-flex flex-column justify-content-evenly mb-3">
+            <div class="row card">
+              <!-- ingredients -->
+              <!--  -->
+              <h3 class="display-6 card-header text-capitalize">ingredients</h3>
+              <!-- Put your ingredients here -->
+              <ul
+                class="card-body list-group-flush d-flex flex-wrap justify-content-center gap-3"
+              >
+                <li
+                  class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
+                >
+                  <!-- Ingredient name here -->
+                  Bread Flour
+                  <!-- Amount here -->
+                  <span
+                    class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
+                    >a lot</span
+                  >
+                </li>
+                <li
+                  class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
+                >
+                  Instant Yeast
+                  <span
+                    class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
+                    >some</span
+                  >
+                </li>
+                <li
+                  class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
+                >
+                  Coarse Salt
+                  <span
+                    class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
+                    >a bit</span
+                  >
+                </li>
+                <li
+                  class="list-group-item py-2 px-4 bg-danger-subtle rounded-bottom-3 d-flex justify-content-between align-items-baseline"
+                >
+                  Water
+                  <span
+                    class="badge badge-pill rounded-bottom-0 text-black bg-light-subtle mx-1"
+                    >21°C</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="row card">
+              <h3
+                class="card-header font-weight-bolder display-6 text-capitalize"
+              >
+                Preparation
+              </h3>
+              <!-- Put a preparation text here-->
+              <p class="card-body text-body">
+                Mix the dough ingredients together. At first the dough will seem
+                very dry and shaggy and you’ll question if it will even come
+                together. But it will. Use a spatula at first, then switch to
+                your hands to ensure all of the flour is moistened. The dough is
+                actually a little sticky after it’s thoroughly mixed. <br />
+                Let it rise at room temperature for 2-3 hours. Cover the dough
+                and let it rise at room temperature for about 2-3 hours until
+                doubled in size. <br />
+                Use right away or refrigerate. After 2-3 hours, you can
+                immediately continue with the next step. However, for ideal
+                flavor and texture, I strongly recommend letting the dough sit
+                in the refrigerator for at least 12 hours and up to 3 days. Yes,
+                3 full days! I usually only let it rest for about 18 hours.
+                During this crucial step, the cold air slows the fermentation
+                process and adds so much flavor and texture. So, you can bake
+                bread in 2-3 hours or in 3 days. The longer it sits, the better
+                it tastes. <br />
+                Shape into 2 loaves or 1 boule. Rest as oven preheats. You can
+                shape the bread into a round loaf (boule) or two longer loaves.
+                I usually make 2 longer loaves side-by-side on a flat baking
+                sheet, about 9×3 inches each. Score with a sharp knife or bread
+                lame. Preheat the oven to a very hot 475°F (246°C). The
+                extremely hot air will immediately set the crust so the bread
+                rises up instead of spreading all over. To help ensure a
+                crispier crust, after the oven pre-heats– pour boiling water
+                into a metal or cast iron baking pan/dish on the bottom oven
+                rack. Immediately place the dough inside and shut the oven door
+                to trap the steam. The steam will help create that coveted crisp
+                crust. If you have a dutch oven, shape the dough into 1 round
+                loaf, and bake it inside the dutch oven with the lid on. <br />
+                Bake until golden brown, about 20-25 minutes. Gently tap the
+                loaves because if they sound hollow, they’re done.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer-b row w-100">
+        <div
+          class="footer-nav container py-4 py-md-5 px-4 px-md-3 text-body-secondary"
+        >
+          <div class="row">
+            <div class="col-lg-3 mb-3">
+              <a
+                class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+                href="/"
+                aria-label="Bootstrap"
+              >
+                <img
+                  id="footer-img"
+                  src="https://th.bing.com/th/id/R.04c077e6bf7e92175c1fbe5092cd013a?rik=huufTI%2b%2fPPr91g&riu=http%3a%2f%2ffreepngclipart.com%2fdownload%2fpizza%2f85583-cooking-royalty-free-chef-cook-logo-hand-painted.png&ehk=55jTVMwneOgN2o1WLaCgc%2bmv7O6NUSUXWcGE%2faCDwTI%3d&risl=&pid=ImgRaw&r=0"
+                  alt=""
+                />
+                <span class="fs-5">COOKBOOK</span>
+              </a>
+              <ul class="list-unstyled small">
+                <li class="mb-2">
+                  Designed and built with all the love in the world by the
+                  <a href="/docs/5.3/about/team/">cookbook</a> with the help of
+                  <a
+                    href="https://github.com/twbs/bootstrap/graphs/contributors"
+                    >our contributors</a
+                  >.
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/">Home</a></li>
+                <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Recipes</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="/docs/5.3/getting-started/">Getting started</a>
+                </li>
+                <li class="mb-2">
+                  <a href="/docs/5.3/examples/starter-template/">Ingredients</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Community</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="https://github.com/twbs/bootstrap/issues">Issues</a>
+                </li>
+                <li class="mb-2">
+                  <a href="https://github.com/twbs/bootstrap/discussions"
+                    >Discussions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const myCarouselElement = document.querySelector("#recipeCarousel");
+
+      const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 3500,
+        touch: false,
+      });
+    </script>
+  </body>
+</html>
